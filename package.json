@@ -1,0 +1,27 @@
+{
+  "name": "ui5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tst": "node srv/test.js",
+    "web": "node web/http.js",
+    "srv": "node srv/srv.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/hana-client": "^2.4.126",
+    "@sap/hdbext": "^5.1.0",
+    "@sap/textanalysis": "^1.1.0",
+    "async": "^3.0.0",
+    "csv-parse": "^4.4.0",
+    "csv-parser": "^2.2.0",
+    "express": "^4.16.4",
+    "fast-csv": "^3.0.1",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
+    "promise": "^8.0.3",
+    "request": "^2.88.0"
+  }
+}

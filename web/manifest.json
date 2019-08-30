@@ -1,0 +1,111 @@
+{
+	"_version": "1.5.0",
+	"sap.app": {
+		"id": "de.htwberlin.adbkt.basic1",
+		"resources": "resources.json",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "hanatemplates.basicSAPUI5ApplicationProject",
+			"version": "0.0.0"
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal"
+		]
+	},
+
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "de.htwberlin.adbkt.basic1.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "de.htwberlin.adbkt.basic1.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "de.htwberlin.adbkt.basic1.view",
+				"controlAggregation": "pages",
+				"controlId": "app"
+			},
+			"routes": [{
+					"pattern": "",
+					"name": "main",
+					"target": "main"
+				}, {
+					"pattern": "databoard",
+					"name": "databoard",
+					"target": "databoard"
+				}, {
+					"pattern": "userboard",
+					"name": "userboard",
+					"target": "userboard"
+				}
+			],
+			"targets": {
+				"main": {
+					"viewId": "main",
+					"viewName": "Main",
+					"viewLevel": 1
+				},
+				"databoard": {
+					"viewId": "databoard",
+					"viewName": "Databoard",
+					"viewLevel": 1
+				},
+				"userboard": {
+					"viewId": "userboard",
+					"viewName": "Userboard",
+					"viewLevel": 1
+				}
+			}
+		}
+	}
+}

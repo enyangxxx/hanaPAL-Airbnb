@@ -1,0 +1,263 @@
+<mvc:View controllerName="de.htwberlin.adbkt.basic1.controller.Userboard" xmlns="sap.m" xmlns:l="sap.ui.layout"
+  xmlns:c="sap.ui.commons" xmlns:r="sap.ui.core" xmlns:mvc="sap.ui.core.mvc">
+  <Page id="userboard" title="{i18n>userboardTitle}" class="sapUiResponsiveContentPadding" showNavButton="true"
+    navButtonPress="onNavBack">
+    <content>
+      <VBox>
+        <InputListItem label="What is your Response Time?">
+            <Select id="hostResponseTimeSelect">
+              <r:Item id="withinAnHour" text="within an hour"></r:Item>
+              <r:Item id="withinAFewHours" text="within a few hours"></r:Item>
+              <r:Item id="withinADay" text="within a day"></r:Item>
+              <r:Item id="aFewDaysOrMore" text="a few days or more"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="Are you a Super Host?">
+            <Select id="hostIsSuperHostSelect">
+              <r:Item id="superHostTrue" text="Yes"></r:Item>
+              <r:Item id="superHostFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="What is your Neighbourhood?">
+            <Select id="hostNeighbourhoodSelect">
+              <r:Item id="neighbourhoodAdlershof" text="Adlershof"></r:Item>
+              <r:Item id="neighbourhoodAltHohenschoenhausen" text="Alt-Hohenschönhausen"></r:Item>
+              <r:Item id="neighbourhoodAltTreptow" text="Alt-Treptow"></r:Item>
+              <r:Item id="neighbourhoodAltglienicke" text="Altglienicke"></r:Item>
+              <r:Item id="neighbourhoodBaumschulenweg" text="Baumschulenweg"></r:Item>
+              <r:Item id="neighbourhoodBiesdorf" text="Biesdorf"></r:Item>
+              <r:Item id="neighbourhoodBlankenburg" text="Blankenburg"></r:Item>
+              <r:Item id="neighbourhoodBohnsdorf" text="Bohnsdorf"></r:Item>
+              <r:Item id="neighbourhoodBritz" text="Britz"></r:Item>
+              <r:Item id="neighbourhoodBuch" text="Buch"></r:Item>
+              <r:Item id="neighbourhoodBuckow" text="Buckow"></r:Item>
+              <r:Item id="neighbourhoodBushwick" text="Bushwick"></r:Item>
+              <r:Item id="neighbourhoodCharlottenburg" text="Charlottenburg"></r:Item>
+              <r:Item id="neighbourhoodCharlottenburgNord" text="Charlottenburg-Nord"></r:Item>
+              <r:Item id="neighbourhoodDahlem" text="Dahlem"></r:Item>
+              <r:Item id="neighbourhoodFalkenberg" text="Falkenberg"></r:Item>
+              <r:Item id="neighbourhoodFalkenhagenerFeld" text="Falkenhagener Feld"></r:Item>
+              <r:Item id="neighbourhoodFennpfuhl" text="Fennpfuhl"></r:Item>
+              <r:Item id="neighbourhoodFranzoesischBuchholz" text="Französisch Buchholz"></r:Item>
+              <r:Item id="neighbourhoodFriedenau" text="Friedenau"></r:Item>
+              <r:Item id="neighbourhoodFriedrichsfelde" text="Friedrichsfelde"></r:Item>
+              <r:Item id="neighbourhoodFriedrichshagen" text="Friedrichshagen"></r:Item>
+              <r:Item id="neighbourhoodFriedrichshain" text="Friedrichshain"></r:Item>
+              <r:Item id="neighbourhoodFrohnau" text="Frohnau"></r:Item>
+              <r:Item id="neighbourhoodGesundbrunnen" text="Gesundbrunnen"></r:Item>
+              <r:Item id="neighbourhoodGropiusstadt" text="Gropiusstadt"></r:Item>
+              <r:Item id="neighbourhoodGrunewald" text="Grunewald"></r:Item>
+              <r:Item id="neighbourhoodGruenau" text="Grünau"></r:Item>
+              <r:Item id="neighbourhoodHalensee" text="Halensee"></r:Item>
+              <r:Item id="neighbourhoodHansaviertel" text="Hansaviertel"></r:Item>
+              <r:Item id="neighbourhoodHeiligensee" text="Heiligensee"></r:Item>
+              <r:Item id="neighbourhoodHeinersdorf" text="Heinersdorf"></r:Item>
+              <r:Item id="neighbourhoodHellersdorf" text="Hellersdorf"></r:Item>
+              <r:Item id="neighbourhoodHermsdorf" text="Hermsdorf"></r:Item>
+              <r:Item id="neighbourhoodJohannisthal" text="Johannisthal"></r:Item>
+              <r:Item id="neighbourhoodKarlshorst" text="Karlshorst"></r:Item>
+              <r:Item id="neighbourhoodKarow" text="Karow"></r:Item>
+              <r:Item id="neighbourhoodKaulsdorf" text="Kaulsdorf"></r:Item>
+              <r:Item id="neighbourhoodKladow" text="Kladow"></r:Item>
+              <r:Item id="neighbourhoodKreuzberg" text="Kreuzberg"></r:Item>
+              <r:Item id="neighbourhoodKoepenick" text="Köpenick"></r:Item>
+              <r:Item id="neighbourhoodLankwitz" text="Lankwitz"></r:Item>
+              <r:Item id="neighbourhoodLichtenberg" text="Lichtenberg"></r:Item>
+              <r:Item id="neighbourhoodLichtenrade" text="Lichtenrade"></r:Item>
+              <r:Item id="neighbourhoodLichterfelde" text="Lichterfelde"></r:Item>
+              <r:Item id="neighbourhoodMahlsdorf" text="Mahlsdorf"></r:Item>
+              <r:Item id="neighbourhoodMariendorf" text="Mariendorf"></r:Item>
+              <r:Item id="neighbourhoodMarienfelde" text="Marienfelde"></r:Item>
+              <r:Item id="neighbourhoodMarzahn" text="Marzahn"></r:Item>
+              <r:Item id="neighbourhoodMaxvorstadt" text="Maxvorstadt"></r:Item>
+              <r:Item id="neighbourhoodMitte" text="Mitte"></r:Item>
+              <r:Item id="neighbourhoodMoabit" text="Moabit"></r:Item>
+              <r:Item id="neighbourhoodMaerkischesViertel" text="Märkisches Viertel"></r:Item>
+              <r:Item id="neighbourhoodNeuHohenschoenhausen" text="Neu-Hohenschönhausen"></r:Item>
+              <r:Item id="neighbourhoodNeukoelln" text="Neukölln"></r:Item>
+              <r:Item id="neighbourhoodNiederschoeneweide" text="NiederschöneweideNiederschöneweide"></r:Item>
+              <r:Item id="neighbourhoodNiederschoenhausen" text="Niederschönhausen"></r:Item>
+              <r:Item id="neighbourhoodOberschoeneweide" text="Oberschöneweide"></r:Item>
+              <r:Item id="neighbourhoodPankow" text="Pankow"></r:Item>
+              <r:Item id="neighbourhoodPlaenterwald" text="Plänterwald"></r:Item>
+              <r:Item id="neighbourhoodPotsdamerPlatz" text="Potsdamer Platz"></r:Item>
+              <r:Item id="neighbourhoodPrenzlauerBerg" text="Prenzlauer Berg"></r:Item>
+              <r:Item id="neighbourhoodRahnsdorf" text="Rahnsdorf"></r:Item>
+              <r:Item id="neighbourhoodReinickendorf" text="Reinickendorf"></r:Item>
+              <r:Item id="neighbourhoodRudow" text="Rudow"></r:Item>
+              <r:Item id="neighbourhoodRummelsburg" text="Rummelsburg"></r:Item>
+              <r:Item id="neighbourhoodSchoeneberg" text="Schöneberg"></r:Item>
+              <r:Item id="neighbourhoodSiemensstadt" text="Siemensstadt"></r:Item>
+              <r:Item id="neighbourhoodSpandau" text="Spandau"></r:Item>
+              <r:Item id="neighbourhoodSteglitz" text="Steglitz"></r:Item>
+              <r:Item id="neighbourhoodTegel" text="Tegel"></r:Item>
+              <r:Item id="neighbourhoodTempelhof" text="Tempelhof"></r:Item>
+              <r:Item id="neighbourhoodTiergarten" text="Tiergarten"></r:Item>
+              <r:Item id="neighbourhoodWaidmannslust" text="Waidmannslust"></r:Item>
+              <r:Item id="neighbourhoodWannsee" text="Wannsee"></r:Item>
+              <r:Item id="neighbourhoodWedding" text="Wedding"></r:Item>
+              <r:Item id="neighbourhoodWeissensee" text="Weißensee"></r:Item>
+              <r:Item id="neighbourhoodWestend" text="Westend"></r:Item>
+              <r:Item id="neighbourhoodWilmersdorf" text="Wilmersdorf"></r:Item>
+              <r:Item id="neighbourhoodWittenau" text="Wittenau"></r:Item>
+              <r:Item id="neighbourhoodZehlendorf" text="Zehlendorf"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="Do you have a Profile Picture?">
+            <Select id="hostHasProfilePicSelect">
+              <r:Item id="profilePicTrue" text="Yes"></r:Item>
+              <r:Item id="profilePicFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="Has your Identity been verified?">
+            <Select id="hostIdentityVerifiedSelect">
+              <r:Item id="identityVerifiedTrue" text="Yes"></r:Item>
+              <r:Item id="identityVerifiedFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="What is your Address?">
+            <Input id="addressInput" type="Text" value="Stavangerstraße 2, Berlin"></Input>
+        </InputListItem>
+        <InputListItem label="Is the displayed Location exact?">
+            <Select id="locationExactSelect">
+              <r:Item id="locationExactTrue" text="Yes"></r:Item>
+              <r:Item id="locationExactFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="What Type of Property is it?">
+            <Select id="propertyTypeSelect">
+              <r:Item id="propertyTypeAparthotel" text="Aparthotel"></r:Item>
+              <r:Item id="propertyTypeApartment" text="Apartment"></r:Item>
+              <r:Item id="propertyTypeBarn" text="Barn"></r:Item>
+              <r:Item id="propertyTypeBedAndBreakfast" text="Bed and breakfast"></r:Item>
+              <r:Item id="propertyTypeBoat" text="Boat"></r:Item>
+              <r:Item id="propertyTypeBoutiqueHotel" text="Boutique hotel"></r:Item>
+              <r:Item id="propertyTypeBungalow" text="Bungalow"></r:Item>
+              <r:Item id="propertyTypeCabin" text="Cabin"></r:Item>
+              <r:Item id="propertyTypeCamperRV" text="Camper/RV"></r:Item>
+              <r:Item id="propertyTypeCastle" text="Castle"></r:Item>
+              <r:Item id="propertyTypeCave" text="Cave"></r:Item>
+              <r:Item id="propertyTypeChalet" text="Chalet"></r:Item>
+              <r:Item id="propertyTypeCondominium" text="Condominium"></r:Item>
+              <r:Item id="propertyTypeCottage" text="Cottage"></r:Item>
+              <r:Item id="propertyTypeGuestSuite" text="Guest suite"></r:Item>
+              <r:Item id="propertyTypeGuesthouse" text="Guesthouse"></r:Item>
+              <r:Item id="propertyTypeHostel" text="Hostel"></r:Item>
+              <r:Item id="propertyTypeHotel" text="Hotel"></r:Item>
+              <r:Item id="propertyTypeHouse" text="House"></r:Item>
+              <r:Item id="propertyTypeHouseboat" text="Houseboat"></r:Item>
+              <r:Item id="propertyTypeIsland" text="Island"></r:Item>
+              <r:Item id="propertyTypeLoft" text="Loft"></r:Item>
+              <r:Item id="propertyTypeResort" text="Resort"></r:Item>
+              <r:Item id="propertyTypeServicedApartment" text="Serviced apartment"></r:Item>
+              <r:Item id="propertyTypeTinyHouse" text="Tiny house"></r:Item>
+              <r:Item id="propertyTypeTownhouse" text="Townhouse"></r:Item>
+              <r:Item id="propertyTypeTrain" text="Train"></r:Item>
+              <r:Item id="propertyTypeVilla" text="Villa"></r:Item>
+              <r:Item id="propertyTypeOther" text="Other"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="What is the Type of the Room?">
+            <Select id="roomTypeSelect">
+              <r:Item id="roomTypeEntireHomeApt" text="Entire home/apt"></r:Item>
+              <r:Item id="roomTypePrivateRoom" text="Private room"></r:Item>
+              <r:Item id="roomTypeSharedRoom" text="Shared room"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="How many people fit into the property? (0-10)">
+            <Input id="accommodatesInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="What is the Type of the Bed?">
+            <Select id="bedTypeSelect">
+              <r:Item id="bedTypeAirbed" text="Airbed"></r:Item>
+              <r:Item id="bedTypeCouch" text="Couch"></r:Item>
+              <r:Item id="bedTypeFuton" text="Futon"></r:Item>
+              <r:Item id="bedTypePullOutSofa" text="Pull-out Sofa"></r:Item>
+              <r:Item id="bedTypeRealBed" text="Real Bed"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="How many additional guests are included? (0-10)">
+            <Input id="guestsIncludedInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="Is the Availability being displayed?">
+            <Select id="availabilitySelect">
+              <r:Item id="availabilityTrue" text="Yes"></r:Item>
+              <r:Item id="availabilityFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="How many Reviews do you have?">
+            <Input id="numberOfReviewsInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="Is the Property instant bookable?">
+            <Select id="instantBookableSelect">
+              <r:Item id="instantBookableTrue" text="Yes"></r:Item>
+              <r:Item id="instantBookableFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="Is the Property business travel ready?">
+            <Select id="businesTravelReadySelect">
+              <r:Item id="businesTravelReadyTrue" text="Yes"></r:Item>
+              <r:Item id="businesTravelReadyFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="How is the Cancellation Policy?">
+            <Select id="cancellationPolicySelect">
+              <r:Item id="cancellationPolicyFlexible" text="flexible"></r:Item>
+              <r:Item id="cancellationPolicyModerate" text="moderate"></r:Item>
+              <r:Item id="cancellationPolicyStrict14" text="strict_14_with_grace_period"></r:Item>
+              <r:Item id="cancellationPolicySuperStrict30" text="super_strict_30"></r:Item>
+              <r:Item id="cancellationPolicySuperStrict60" text="super_strict_60"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="Do you require Guest Profile Picture?">
+            <Select id="guestProfilePictureSelect">
+              <r:Item id="guestProfilePictureTrue" text="Yes"></r:Item>
+              <r:Item id="guestProfilePictureFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="Do you require Guest Phone Verification?">
+            <Select id="guestPhoneSelect">
+              <r:Item id="guestPhoneTrue" text="Yes"></r:Item>
+              <r:Item id="guestPhoneFalse" text="No"></r:Item>
+            </Select>
+        </InputListItem>
+        <InputListItem label="What is your Response Rate (0-100 %)?">
+            <Input id="responseRateInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="How many Properties are you offering on Airbnb? (1-10)">
+            <Input id="hostListingInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="How many Bathrooms? (0-10)">
+            <Input id="bathroomsInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="How many Bedrooms? (0-10)">
+            <Input id="bedroomsInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="How many Beds? (0-10)">
+            <Input id="bedsInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="How much is the required Security Deposit? (0-500 in €)">
+            <Input id="securityDepoInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="How much is the cleaning fee? (0-100 in €)">
+            <Input id="cleaningFeeInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="How much is the Cost per extra guest? (0-100 in €)">
+            <Input id="costPerExtraGuestInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="What is the Review Score of Property? (0-100)">
+            <Input id="reviewScoreInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="How many Reviews do you receive per month? (max. 30)">
+            <Input id="reviewPerMonthInput" type="Number"></Input>
+        </InputListItem>
+        <InputListItem label="Evaluate your property">
+            <Button id="evaluateButton" text="Evaluate" press="onEvaluate"/>
+        </InputListItem>
+        <InputListItem label="Result">
+            <Label id="evaluationText" text=""></Label>
+        </InputListItem>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

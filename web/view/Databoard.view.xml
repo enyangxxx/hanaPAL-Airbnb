@@ -1,0 +1,42 @@
+<mvc:View controllerName="de.htwberlin.adbkt.basic1.controller.Databoard" xmlns="sap.m" xmlns:l="sap.ui.layout"
+  xmlns:c="sap.ui.commons" xmlns:mvc="sap.ui.core.mvc">
+  <Page id="databoard" title="{i18n>databoardTitle}" class="sapUiResponsiveContentPadding" showNavButton="true"
+    navButtonPress="onNavBack">
+    <content>
+      <VBox>
+        <InputListItem label="Create Table">
+            <Label id="createTableText" text=""></Label>
+            <Button id="createTableButton" text="Create table" press="onCreateTable"/>
+        </InputListItem>
+        <InputListItem label="Import Data">
+            <Label id="importStatusText" text=""></Label>
+            <Button id="importButton" text="Import" press="onImportDataButtonPress" style=""/>
+        </InputListItem>
+        <InputListItem label="Dataset Size">
+            <Label id="datasetSizeText" text=""></Label>
+            <Button id="sizeQueryButton" text="Ask me" press="onCheckDataSetSize"/>
+        </InputListItem>
+        <InputListItem label="Data Transformation">
+            <Label id="transformText" text=""></Label>
+            <Button id="transformButton" text="Transform" press="onTransformData"/>
+        </InputListItem>
+        <InputListItem label="Missing Data Substitution">
+            <Label id="substituteText" text=""></Label>
+            <Button id="substituteButton" text="Substitute" press="onSubstitutingMissingData"/>
+        </InputListItem>
+        <InputListItem label="Binning Groundtruth">
+            <Label id="binningText" text=""></Label>
+            <Button id="binningButton" text="Binning" press="onBinningGroundTruth"/>
+        </InputListItem>
+        <InputListItem label="Train the model">
+            <Label id="trainModelText" text=""></Label>
+            <Button id="trainModelButton" text="Train Model" press="onTrainModel"/>
+        </InputListItem>
+        <InputListItem label="Delete Table">
+            <Label id="deleteText" text=""></Label>
+            <Button id="deleteButton" text="Delete Table" press="onDeleteTable"/>
+        </InputListItem>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

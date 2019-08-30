@@ -1,0 +1,10 @@
+<mvc:View controllerName="de.htwberlin.adbkt.basic1.controller.Main" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<Page id="main" title="Mainboard" class="sapUiResponsiveContentPadding">
+		<content>
+			<VBox>
+				<Button width="5cm" text="Databoard" press="onPressDataboard"/>
+				<Button width="5cm" text="Userboard" press="onPressUserBoard"/>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>
